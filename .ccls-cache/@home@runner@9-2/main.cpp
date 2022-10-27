@@ -18,7 +18,7 @@ for(int a = 0; a < 5; a++){
     cout << setw(5) <<average;
     double wAverage = ((grades [a][1] * 0.2) + (grades [a][2] * 0.3) + (grades [a][3] * 0.3) + (grades [a][4] * 0.2));
   cout << setw(5) <<wAverage;
-      cout << endl; 
+       
   int small = grades [a][1];
 
   if(grades[a][2] < small){
@@ -28,10 +28,10 @@ for(int a = 0; a < 5; a++){
     small = grades[a][3];
   }
   else {
-    small = grades [a][3];
-
-
-
-  
+    small = grades [a][4];
+    }
+    double average2 = (grades [a][1] + grades [a][2] + grades[a][3] + grades[a][4] - small )/3;
+    cout << setw(5)<< average2;
+    cout<< endl;
 }
 }
